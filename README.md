@@ -8,7 +8,7 @@ done column indicates analysis was completed for a given table
 first tab has input data
 subsequent tabs are pivot views of the input data
 
-In designing our purpose-specific [logical] model (see some published info [https://github.com/informaticsrepo/omop-onc](here), we use the term entity for high level constructs. In OMOP, the counterpart of entity would be table.
+In designing our purpose-specific [logical] model (see some published info [https://github.com/informaticsrepo/omop-onc](here)), we use the term entity for high level constructs. In OMOP, the counterpart of entity would be table.
 
 Our model adopts the CodeableConcept from FHIR standard. This allows capture of "source_concept_id" without the need to maintain an associated model's terminology layer (=Athena for OMOP) and still allows embracing a number of source terminologies.
 
