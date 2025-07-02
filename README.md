@@ -8,7 +8,7 @@ done column indicates analysis was completed for a given table
 first tab has input data
 subsequent tabs are pivot views of the input data
 
-In designing our purpose specific [[logical]] model, we use the term entity for high level constructs. In OMOP, the counterpart of entity would be table.
+In designing our purpose-specific [logical] model, we use the term entity for high level constructs. In OMOP, the counterpart of entity would be table.
 
 # Counts
 
