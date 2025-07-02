@@ -5,16 +5,33 @@ Sebastian van Saandijk
 
 done column indicates analysis was completed for a given table
 
-CSV and XLSX files have the same information
-CSV is added because it is rendered by Github better
+first tab has input data
+subsequent tabs are pivot view of the input data
+
+In designing our purpose specific [[logical]] model, we use the term entity for high level constructs. In OMOP, the counterpart of entity would be table.
+
+# Counts
 
 OMOP has 432 fields
 
-# _concept_id
+## _concept_id
 119 fields (27.6%)  are using the concept_id paradigm.
 
-# source_value
+## source_value
 47 fields (10.9%) are source value fields
+
+# Other convetions
+## parroting
+A model may not repeat in column name the specific context (e.g., condition_occurrence.start_date) and rely on table context to provide this information.
+Or a model does repeat ("parotting") the context to be more specific. (e.g.,condition_occurrence.**condition**_start_date
+
+## short names for entities (tables)
+Some columns use in parroting a shorter version of the entity. Either the name would be shortened or parroting would be consistent.
+e.g.,  
+condition_occurrence.condition_occurrence_start_date  
+or  
+condition.condition_start_date
+
 
 # Person table
 
