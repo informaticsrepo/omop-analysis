@@ -1,7 +1,7 @@
 # Analysis of OMOP data model
 
 Vojtech Huser
-Sebastian van Saandijk
+Sebastiaan van Sandijk
 
 done column indicates analysis was completed for a given table
 
