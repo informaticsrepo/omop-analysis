@@ -22,10 +22,11 @@ OMOP has 432 fields
 ## source_value
 47 fields (10.9%) are source value fields
 
-# Other convetions
+# Other conventions
 ## parroting
-A model may not repeat in column name the specific context (e.g., condition_occurrence.start_date) and rely on table context to provide this information.
-Or a model does repeat ("parotting") the context to be more specific. (e.g.,condition_occurrence.**condition**_start_date
+A model may not have repeat in column name the specific context (e.g., condition_occurrence.start_date) and rely on table context to provide this information.
+Or a model does indeed repeat (is "parotting") the context in an effort to be more specific. (e.g.,condition_occurrence.**condition**_start_date
+It also is a consideration when doing table joins. If table needs to refer to multiple concepts, then it must distinguish somehow (obviously).
 
 ## short names for entities (tables)
 Some columns use in parroting a shorter version of the entity. Either the name would be shortened or parroting would be consistent.
