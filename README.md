@@ -18,7 +18,7 @@ In building the purpose specific model, we found it helpful to also classify dat
 We next analyzed the tags and classified constructs (e.g., ethnicity,  into several categories based on how many columns were tagged to the construct. 
 Finally, we found the OMOP concept of ‘type’ column in most OMOP tables very useful. The type concept idea is used throughout OMOP and provides unique analytical abilities. In our model, we use the term entity where OMOP would use a table. E.g., patient entity would be counterpart of OMOP person table. We looked at naming consistency in OMOP for the type column paradigm. In our model, we eventually chose the data element of typeOrigin for OMOP type columns/paradigm.
 ## Results
-The tags and categorizations are available at project repository at github.com/informaticsrepo/omop-analysis. 
+The tags and categorizations are available at project repository at https://github.com/informaticsrepo/omop-analysis. 
 The following construct types were identified:
 -	A triple construct is a construct that in the model has a triple representation and the count of tagged columns is 3. One column is of category standardized concept column category (x_concept_id) and two columns for source value (x_source_concept_id and x_source_value).  For example, ethnicity is an example of a triple construct. 
 -	A double construct is a construct that in the model has a double representation and the count of tagged columns is 2. For example, care_site table construct of place_of_service has two tagged columns of place_of_service_concept_id, place_of_service_source_value. 
